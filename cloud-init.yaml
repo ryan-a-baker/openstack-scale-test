@@ -1,0 +1,4 @@
+#cloud-config
+runcmd:
+ - dd if=/dev/urandom of=/tmp/filler bs=1G count=15
+ - shutdown -P now
